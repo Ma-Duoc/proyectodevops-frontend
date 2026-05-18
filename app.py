@@ -16,7 +16,7 @@ app.secret_key = os.getenv('SECRET_KEY', 'clave_secreta_por_defecto')
 CORS(app)
 
 # Configuración de la URL del backend API
-BACKEND_URL = os.getenv('BACKEND_URL', 'http://localhost:3000')
+BACKEND_URL = os.getenv('BACKEND_URL', 'http://backend:3000')
 
 # Ruta principal - muestra la página de inicio
 @app.route('/')
@@ -223,3 +223,5 @@ if __name__ == '__main__':
     
     # Iniciar el servidor Flask
     app.run(host='0.0.0.0', port=port, debug=debug_mode)
+
+
