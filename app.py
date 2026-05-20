@@ -168,4 +168,4 @@ if __name__ == '__main__':
     print(f'Iniciando servidor Flask en el puerto {port}')
     print(f'URL del backend: {BACKEND_URL}')
 
-    app.run(host='0.0.0.0', port=port, debug=debug_mode)
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)   
