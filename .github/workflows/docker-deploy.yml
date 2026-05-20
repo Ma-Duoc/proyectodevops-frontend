@@ -37,4 +37,4 @@ jobs:
             docker stop frontend || true
             docker rm frontend || true
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/proyectodevops-frontend:latest
-            docker run -d -p 5000:5000 --name frontend -e BACKEND_URL=http://10.0.4.146:3000 ${{ secrets.DOCKERHUB_USERNAME }}/proyectodevops-frontend:latest
+            docker run -d -p 5000:5000 --name frontend -e BACKEND_URL=http://10.0.2.146:3000 ${{ secrets.DOCKERHUB_USERNAME }}/proyectodevops-frontend:latest
