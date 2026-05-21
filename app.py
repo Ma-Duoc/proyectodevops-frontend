@@ -22,7 +22,7 @@ BACKEND_URL = os.getenv('BACKEND_URL', 'http://backend:3000')
 @app.route('/')
 def index():
     try:
-        response = requests.get(f'{BACKEND_URL.rstrip("/")}/api/usuarios')
+        response = requests.get(f'{BACKEND_URL.rstrip("/")}/api/usuarios') 
 
         if response.status_code == 200:
             usuarios = response.json()
